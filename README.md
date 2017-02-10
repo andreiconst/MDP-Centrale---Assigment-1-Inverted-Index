@@ -9,10 +9,10 @@ About the computer :<br /><br />
 ![specsordi](image/specsordi.PNG)
 
 About the Virtual Machine :<br /><br />
-![machinevirtuelle](image/machinevirtuelle.png)
+![machinevirtuelle](image/machinevirtuelle.PNG)
 
 About Hadopp:<br /><br />
-![specshadoop](image/hadoop.png)
+![specshadoop](image/hadoop.PNG)
 
 Please note that for all the following, we used the Stanford cs246 Hadoop Tutorial to set up our machine, and especially the code it provides as a skeleton for our mapreduce, only changing bits and pieces in order to fit the required tasks. So we acknowledge having taken a great deal of inspiration from their file and code.
 
@@ -76,7 +76,7 @@ public static class Reduce extends Reducer<Text, IntWritable, Text, IntWritable>
 We implement a count, and extract only words that have a count of over 4000, and we exclude the blanck spaces we created with our regular expression.<br /><br />
 
 Below is a snippet of the result:<br /><br />
-![stopwords](image/stopwords.png)
+![stopwords](image/stopwords.PNG)
 
 For the first question we have to use reducers. To merge the results, we can use the following line of code: <br />
 ```
@@ -107,6 +107,8 @@ To use a compression codec we can use the following line of code:<br /><br />
 
 
 ```javascript
+      FileOutputFormat.setCompressOutput(job, true);
+      FileOutputFormat.setOutputCompressorClass(job,org.apache.hadoop.io.compress.SnappyCodec.class);
 ```
 
 
@@ -115,15 +117,15 @@ To use a compression codec we can use the following line of code:<br /><br />
 
 Below is a table resuming our results, with appropriate snippets :<br /><br />
 1 reducers:<br /><br />
-![logstopwords](image/logstopwords.png)
+![logstopwords](image/logstopwords.PNG)
 10 reducers:<br /><br />
-![normalreducers](image/normalreducers.png)
+![normalreducers](image/normalreducers.PNG)
 50 reducers:<br /><br />
-![50reducers](image/50reducers.png)
+![50reducers](image/50reducers.PNG)
 Combiner:<br /><br />
-![combiner](image/combiner.png)
+![combiner](image/combiner.PNG)
 Compression:<br /><br />
-![Stopwordscompression](image/Stopwordscompression.png)
+![Stopwordscompression](image/Stopwordscompression.PNG)
 
 Below please find a table resuming our runtim results. <br /><br />
 
@@ -195,7 +197,7 @@ Nothing special to remark here, just some special tecnhiques to ensure we get th
 
 Below please find a snipped of the result:<br /><br />
 Result inverted Index:<br />
-![snippetinvert1](image/snippetinvert1.png)
+![snippetinvert1](image/snippetinvert1.PNG)
 
 ##Question c : unique word count
 We had to change again the mapper. This time we put the name of the document as key, and the words as values. Here is our mapper code.<br /><br />
@@ -244,7 +246,7 @@ Next, for the reducer we used the Hashmap class. It has the useful property of b
 ```
 The idea is to count each time a new key is added, counting as an appearance of a new word. <br />
 Please find below the result of our count:<br />
-![snippetcount](image/snippetcount.png)
+![snippetcount](image/snippetcount.PNG)
 
 ## Question d
 
@@ -284,7 +286,7 @@ Below is the code four our reducer :<br />
 ```
 
 Here is a snippet of our result:<br />
-![snippetfancyinverted](image/snippetfancyinverted.png)
+![snippetfancyinverted](image/snippetfancyinverted.PNG)
 
 ##Conclusion
 
