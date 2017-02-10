@@ -6,7 +6,7 @@ Assignment 1 for the Massive Data Processing Class
 Here we use the Cloudera virtual machine on our computer which configuration is showed below. We did not make any particular change to defaults, and chose the advised configuration when installing and setting up the Virtual Machine. We found afterwards that Hadoop worked sufficiently well with these settings.
 
 About the computer :<br /><br />
-![specsordi](image/specsordi.png)
+![specsordi](image/specsordi.PNG)
 
 About the Virtual Machine :<br /><br />
 ![machinevirtuelle](image/machinevirtuelle.png)
