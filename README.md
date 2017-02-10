@@ -117,15 +117,15 @@ To use a compression codec we can use the following line of code:<br /><br />
 
 Below is a table resuming our results, with appropriate snippets :<br /><br />
 1 reducers:<br /><br />
-![logstopwords](image/logstopwords.PNG)
+![logstopwords](image/logstopwords.PNG)<br /><br />
 10 reducers:<br /><br />
-![normalreducers](image/normalreducers.PNG)
+![normalreducers](image/normalreducers.PNG)<br /><br />
 50 reducers:<br /><br />
-![50reducers](image/50reducers.PNG)
+![50reducers](image/50reducers.PNG)<br /><br />
 Combiner:<br /><br />
-![combiner](image/combiner.PNG)
+![combiner](image/combiner.PNG)<br /><br />
 Compression:<br /><br />
-![Stopwordscompression](image/Stopwordscompression.PNG)
+![Stopwordscompression](image/Stopwordscompression.PNG)<br /><br />
 
 Below please find a table resuming our runtim results. <br /><br />
 
